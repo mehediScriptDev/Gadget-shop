@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import { LuShoppingCart } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import Banner from "./Banner";
@@ -34,13 +34,13 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <NavLink to={'/home'}>Home</NavLink>
               </li>
               <li>
                 <a>Statistics</a>
               </li>
               <li>
-                <a>Dashboard</a>
+                <NavLink to={'/dashboard'}>Dashboard</NavLink>
               </li>
             </ul>
           </div>
@@ -49,13 +49,13 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+            <NavLink to={'/home'}>Home</NavLink>
             </li>
             <li>
               <a>Statistics</a>
             </li>
             <li>
-              <a>Dashboard</a>
+            <NavLink to={'/dashboard'}>Dashboard</NavLink>
             </li>
           </ul>
         </div>
